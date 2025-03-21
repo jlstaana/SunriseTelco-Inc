@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register - Sunrise Telecom</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <h2><center>Login</center></h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="cta">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
+            <p>Admin? <a href="#" id="show-admin-login">Login here</a></p>
+        </div>
+        <div class="form-container" id="register-form" style="display: none;">
+            <h2><center>Register</center></h2>
+            <form id="register-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="cta">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+        </div>
+        <div class="form-container" id="admin-login-form" style="display: none;">
+            <h2><center>Admin Login</center></h2>
+            <form id="admin-login">
+                <input type="email" placeholder="Admin Email" required>
+                <input type="password" placeholder="Password" required>
+                <div class="captcha-container">
+                    <label for="captcha" id="captcha-question"></label>
+                    <input type="text" id="captcha" placeholder="Your Answer" required>
+                </div>
+                <button type="submit" class="cta">Login</button>
+            </form>
+            <p>Not an admin? <a href="#" id="show-login-from-admin">Login here</a></p>
+        </div>
+    </div>
+    <script>
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 10);
+            const question = `What is ${num1} + ${num2}?`;
+            document.getElementById('captcha-question').innerText = question;
+            return num1 + num2;
+        }
+
+        let captchaAnswer;
+
+        document.getElementById('show-register').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.form-container').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        });
+
+        document.getElementById('show-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.form-container').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+        });
+
+        document.getElementById('show-admin-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.form-container').style.display = 'none';
+            document.getElementById('admin-login-form').style.display = 'block';
+            captchaAnswer = generateCaptcha();
+        });
+
+        document.getElementById('show-login-from-admin').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.form-container').style.display = 'block';
+            document.getElementById('admin-login-form').style.display = 'none';
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate successful login
+            window.location.href = '../index.html';
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate successful registration
+            window.location.href = '../index.html';
+        });
+
+        document.getElementById('admin-login').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userAnswer = parseInt(document.getElementById('captcha').value, 10);
+            if (userAnswer === captchaAnswer) {
+                // Simulate successful admin login
+                window.location.href = '../index.html';
+            } else {
+                alert('Incorrect CAPTCHA answer. Please try again.');
+                captchaAnswer = generateCaptcha(); // Generate a new CAPTCHA question
+            }
+        });
+    </script>
+</body>
+</html>
