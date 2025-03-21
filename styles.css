@@ -32,7 +32,7 @@ nav ul li a {
     font-weight: bold;
 }
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('images/sunrise-background-3.jpg') no-repeat center center/cover;
     color: white;
     padding: 100px 20px;
 }
@@ -72,16 +72,21 @@ nav ul li a {
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     text-align: center;
 }
 .feature:hover {
     transform: scale(1.05);
+    background-color: #ff6600; /* Change background color on hover */
+    color: white; /* Change text color on hover */
 }
 .feature i {
     font-size: 2em;
     color: #ff6600;
     margin-bottom: 10px;
+}
+.feature:hover i {
+    color: white; /* Change icon color on hover */
 }
 .feature h3 {
     margin: 10px 0;
