@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Management - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/portal.css">
+    <link rel="stylesheet" href="../styles/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="portal-hero">
+        <h1>Account Management</h1>
+        <p>View and update your account information</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="portal-grid">
+            <div class="portal-card account-info">
+                <i class="fas fa-user"></i>
+                <h3>Personal Information</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Full Name</label>
+                        <p>John Doe</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Email</label>
+                        <p>john@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Phone</label>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <label>Address</label>
+                        <p>123 Main St, City, State</p>
+                    </div>
+                </div>
+                <button class="cta edit-btn">Edit Profile</button>
+            </div>
+
+            <div class="portal-card security-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security Settings</h3>
+                <div class="security-items">
+                    <div class="security-item">
+                        <i class="fas fa-key"></i>
+                        <div class="security-info">
+                            <h4>Password</h4>
+                            <p>Last changed: 30 days ago</p>
+                        </div>
+                        <button class="cta">Change</button>
+                    </div>
+                    <div class="security-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="security-info">
+                            <h4>Two-Factor Auth</h4>
+                            <p>Status: Enabled</p>
+                        </div>
+                        <button class="cta">Configure</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portal-card preferences-card">
+                <i class="fas fa-bell"></i>
+                <h3>Notification Preferences</h3>
+                <div class="preferences-list">
+                    <label class="toggle-label">
+                        <input type="checkbox" checked>
+                        <span>Email Notifications</span>
+                    </label>
+                    <label class="toggle-label">
+                        <input type="checkbox" checked>
+                        <span>SMS Alerts</span>
+                    </label>
+                    <label class="toggle-label">
+                        <input type="checkbox">
+                        <span>Marketing Updates</span>
+                    </label>
+                </div>
+                <button class="cta">Save Preferences</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+</body>
+</html>

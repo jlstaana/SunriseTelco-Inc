@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.form-container {
+    background-color: #fff;
+    padding: 40px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 360px; 
+    text-align: left;
+}
+.form-container h2 {
+    margin-bottom: 30px; 
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input {
+    padding: 12px 15px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container form button {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+.form-container form button:hover {
+    background-color: #e65c00;
+}
+.form-container p {
+    margin-top: 20px; 
+    text-align: center;
+}
+.form-container p a {
+    color: #ff6600;
+    text-decoration: none;
+}
+.form-container p a:hover {
+    text-decoration: underline;
+}
+.captcha-container {
+    margin: 20px 0; 
+}
+.captcha-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.captcha-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

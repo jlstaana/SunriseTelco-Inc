@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage Analytics - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/portal.css">
+    <link rel="stylesheet" href="../styles/usage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="portal-hero">
+        <h1>Usage Analytics</h1>
+        <p>Monitor your internet usage and performance</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="portal-grid">
+            <div class="portal-card usage-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Current Usage</h3>
+                </div>
+                <div class="usage-stats">
+                    <div class="usage-meter">
+                        <div class="progress-bar" style="width: 65%;">65%</div>
+                    </div>
+                    <p class="usage-text">650GB of 1000GB Used</p>
+                    <div class="usage-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Download</span>
+                            <span class="detail-value">450 GB</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Upload</span>
+                            <span class="detail-value">200 GB</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Days Left</span>
+                            <span class="detail-value">15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portal-card speed-card">
+                <div class="card-header">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Speed Tests</h3>
+                </div>
+                <div class="speed-info">
+                    <p>Check your connection speed</p>
+                    <a href="../pages/speed-test.html" class="cta cta-primary">Run Speed Test</a>
+                </div>
+            </div>
+
+            <div class="portal-card history-card">
+                <div class="card-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Usage History</h3>
+                </div>
+                <div class="history-info">
+                    <p>View detailed usage reports</p>
+                    <button class="cta">View Reports</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+</body>
+</html>

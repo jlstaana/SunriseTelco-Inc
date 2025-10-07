@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="blog-section">
+        <div class="container">
+            <h1>Latest News & Updates</h1>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="../images/5G.jpg" alt="5G Network">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> Jan 15, 2025</span>
+                            <span><i class="far fa-user"></i> Tech Team</span>
+                        </div>
+                        <h2>The Future of 5G Networks</h2>
+                        <p>Discover how 5G technology is revolutionizing internet connectivity...</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <!-- More blog cards will be dynamically loaded -->
+            </div>
+
+            <div class="blog-pagination">
+                <button class="pagination-btn"><i class="fas fa-chevron-left"></i></button>
+                <span class="current-page">1</span>
+                <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+    <script src="../script/blog.js"></script>
+</body>
+</html>

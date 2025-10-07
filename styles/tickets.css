@@ -1,0 +1,272 @@
+.portal-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.ticket-form {
+    background: var(--lighter-color);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    height: 120px;
+    resize: vertical;
+}
+
+.tickets-list {
+    margin-top: 20px;
+}
+
+.ticket-item {
+    background: var(--lighter-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.ticket-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ticket-status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.ticket-status.in-progress {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.ticket-status.resolved { background: #d4edda; color: #155724; }
+
+.ticket-content h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+.ticket-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .portal-card {
+        padding: 20px;
+    }
+    
+    .ticket-form {
+        padding: 15px;
+    }
+    
+    .ticket-item {
+        padding: 15px;
+    }
+}
+
+.history-list {
+    margin-top: 20px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid var(--lighter-color);
+    transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+    background-color: var(--lighter-color);
+}
+
+.history-details h4 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.main-content {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-header i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.section-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.create-ticket, .active-tickets {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.ticket-form {
+    margin-top: 20px;
+}
+
+.ticket-form select,
+.ticket-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.ticket-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--primary-hover);
+}
+
+.ticket {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.in-progress {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.ticket h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.ticket p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px 0;
+    }
+    
+    .create-ticket, .active-tickets {
+        padding: 20px;
+    }
+}

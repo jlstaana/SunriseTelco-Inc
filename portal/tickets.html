@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Tickets - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/portal.css">
+    <link rel="stylesheet" href="../styles/tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Support Tickets</h1>
+            <p class="subtitle">Get help with your services</p>
+
+            <div class="create-ticket">
+                <div class="section-header">
+                    <i class="fas fa-plus-circle"></i>
+                    <h2>Create Ticket</h2>
+                </div>
+                <p>Submit a new support request</p>
+                <form class="ticket-form">
+                    <select required>
+                        <option value="">Select Issue Type</option>
+                        <option value="technical">Technical Issue</option>
+                        <option value="billing">Billing Issue</option>
+                        <option value="service">Service Issue</option>
+                    </select>
+                    <textarea placeholder="Describe your issue..." required></textarea>
+                    <button type="submit" class="submit-btn">Submit Ticket</button>
+                </form>
+            </div>
+
+            <div class="active-tickets">
+                <div class="section-header">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h2>Active Tickets</h2>
+                </div>
+                <div class="ticket-list">
+                    <div class="ticket">
+                        <div class="status pending">Pending</div>
+                        <h3>Internet Connection Issue</h3>
+                        <p>Ticket #1234 - Created 2 days ago</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                    <div class="ticket">
+                        <div class="status in-progress">In Progress</div>
+                        <h3>Billing Inquiry</h3>
+                        <p>Ticket #1235 - Created 1 day ago</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+</body>
+</html>

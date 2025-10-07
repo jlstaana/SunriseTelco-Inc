@@ -1,0 +1,64 @@
+.speed-test-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--dark-color), #1a1a1a);
+    color: var(--white);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.speed-test-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+}
+
+.speed-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.indicator {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+}
+
+.indicator i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.speed-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.speed-label {
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+#start-test {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+#start-test:hover {
+    transform: scale(1.1);
+}

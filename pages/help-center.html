@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/help-center.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="help-center">
+        <div class="help-hero">
+            <div class="container">
+                <h1>Help Center</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for help..." id="help-search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="help-content container">
+            <aside class="help-sidebar">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#internet" class="active">Internet Issues</a></li>
+                    <li><a href="#billing">Billing Support</a></li>
+                    <li><a href="#technical">Technical Support</a></li>
+                    <li><a href="#account">Account Management</a></li>
+                </ul>
+                
+                <div class="quick-contact">
+                    <h3>Need Immediate Help?</h3>
+                    <p>Our support team is available 24/7</p>
+                    <div class="contact-options">
+                        <a href="tel:1800SUNRISE" class="contact-option">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Us</span>
+                        </a>
+                        <a href="#" class="contact-option">
+                            <i class="fas fa-comments"></i>
+                            <span>Live Chat</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="help-main">
+                <section id="internet" class="help-section active">
+                    <h2>Internet Issues</h2>
+                    <div class="help-intro">
+                        <p>Having trouble with your connection? Find quick solutions to common internet problems or contact our support team for assistance.</p>
+                    </div>
+                    <div class="quick-fixes">
+                        <h3>Quick Fixes</h3>
+                        <ul>
+                            <li><i class="fas fa-sync"></i> Restart your router</li>
+                            <li><i class="fas fa-wifi"></i> Check WiFi connection</li>
+                            <li><i class="fas fa-network-wired"></i> Verify cable connections</li>
+                        </ul>
+                    </div>
+                    <div class="faq-list" data-category="internet"></div>
+                </section>
+
+                <section id="billing" class="help-section">
+                    <h2>Billing Support</h2>
+                    <div class="help-intro">
+                        <p>Manage your bills, payments, and billing preferences. Find answers to common billing questions and learn about payment options.</p>
+                    </div>
+                    <div class="billing-options">
+                        <div class="option-grid">
+                            <div class="billing-card">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <h3>View & Pay Bill</h3>
+                                <ul>
+                                    <li>Check current balance</li>
+                                    <li>View billing history</li>
+                                    <li>Make a payment</li>
+                                </ul>
+                                <a href="/login/login.html" class="cta">Go to My Account</a>
+                            </div>
+                            <div class="billing-card">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>Payment Methods</h3>
+                                <ul>
+                                    <li>Credit/Debit Card</li>
+                                    <li>Bank Transfer</li>
+                                    <li>AutoPay Setup</li>
+                                </ul>
+                                <a href="#" class="cta">Manage Payments</a>
+                            </div>
+                            <div class="billing-card">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h3>Billing Cycle</h3>
+                                <ul>
+                                    <li>Change due date</li>
+                                    <li>Set up reminders</li>
+                                    <li>Paperless billing</li>
+                                </ul>
+                                <a href="#" class="cta">Manage Preferences</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-help-box">
+                        <h3>Need Help with Your Bill?</h3>
+                        <div class="help-options">
+                            <a href="#" class="help-option">
+                                <i class="fas fa-calculator"></i>
+                                <span>Bill Explanation</span>
+                            </a>
+                            <a href="#" class="help-option">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>Payment Plans</span>
+                            </a>
+                            <a href="#" class="help-option">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Billing Issues</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="faq-list" data-category="billing"></div>
+                </section>
+
+                <section id="technical" class="help-section">
+                    <h2>Technical Support</h2>
+                    <div class="help-intro">
+                        <p>Get help with equipment setup, network configuration, and technical troubleshooting.</p>
+                    </div>
+                    <div class="quick-fixes">
+                        <h3>Common Technical Solutions</h3>
+                        <ul>
+                            <li><i class="fas fa-sync"></i> Power cycle your modem and router</li>
+                            <li><i class="fas fa-wifi"></i> Check WiFi channel settings</li>
+                            <li><i class="fas fa-shield-alt"></i> Update router firmware</li>
+                            <li><i class="fas fa-network-wired"></i> Test wired connection</li>
+                        </ul>
+                    </div>
+                    <div class="support-tools">
+                        <h3>Support Tools</h3>
+                        <div class="tools-grid">
+                            <a href="speed-test.html" class="tool-card">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Speed Test</h4>
+                                <p>Check your connection speed</p>
+                            </a>
+                            <a href="#" class="tool-card">
+                                <i class="fas fa-wifi"></i>
+                                <h4>Network Diagnostics</h4>
+                                <p>Analyze your network health</p>
+                            </a>
+                            <a href="#" class="tool-card">
+                                <i class="fas fa-download"></i>
+                                <h4>Equipment Guides</h4>
+                                <p>Download user manuals</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="faq-list" data-category="technical"></div>
+                </section>
+
+                <section id="account" class="help-section">
+                    <h2>Account Management</h2>
+                    <div class="help-intro">
+                        <p>Manage your account settings, billing preferences, and service options.</p>
+                    </div>
+                    <div class="account-options">
+                        <div class="option-card">
+                            <div class="option-header">
+                                <i class="fas fa-user-cog"></i>
+                                <h3>Account Settings</h3>
+                            </div>
+                            <ul>
+                                <li>Update contact information</li>
+                                <li>Change password</li>
+                                <li>Manage notifications</li>
+                                <li>View account history</li>
+                            </ul>
+                            <a href="/login/login.html" class="cta">Login to Account</a>
+                        </div>
+                        <div class="option-card">
+                            <div class="option-header">
+                                <i class="fas fa-file-invoice"></i>
+                                <h3>Billing & Payments</h3>
+                            </div>
+                            <ul>
+                                <li>View current bill</li>
+                                <li>Payment methods</li>
+                                <li>AutoPay setup</li>
+                                <li>Billing history</li>
+                            </ul>
+                            <a href="/login/login.html" class="cta">Manage Billing</a>
+                        </div>
+                    </div>
+                    <div class="faq-list" data-category="account"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+    <script src="../script/faq.js"></script>
+    <script src="../script/help-center.js"></script>
+</body>
+</html>

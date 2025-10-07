@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Portal - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/customerportal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="portal-hero">
+        <h1>Customer Portal</h1>
+        <p>Manage your account and services in one place</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="portal-grid">
+            <div class="portal-card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Account Management</h3>
+                <p>View and manage your account details</p>
+                <a href="/portal/account.html" class="cta">Access Account</a>
+            </div>
+
+            <div class="portal-card">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Billing & Payments</h3>
+                <p>Access your bills and make payments</p>
+                <a href="/portal/billing.html" class="cta">View Bills</a>
+            </div>
+
+            <div class="portal-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Usage Analytics</h3>
+                <p>Monitor your internet usage</p>
+                <a href="/portal/usage.html" class="cta">Check Usage</a>
+            </div>
+
+            <div class="portal-card">
+                <i class="fas fa-headset"></i>
+                <h3>Support Tickets</h3>
+                <p>View and create support requests</p>
+                <a href="/portal/tickets.html" class="cta">Get Support</a>
+            </div>
+        </div>
+
+        <div class="portal-access">
+            <div class="access-box">
+                <h2>Not Logged In?</h2>
+                <p>Please log in to access your portal features</p>
+                <div class="access-buttons">
+                    <a href="/login/login.html" class="cta cta-primary">Login</a>
+                    <a href="/login/login.html#register" class="cta">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+</body>
+</html>

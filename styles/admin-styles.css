@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font for a modern look */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9; /* Softer background color */
+    color: #2c3e50; /* Darker text for better readability */
+    line-height: 1.8;
+}
+
+h1, h2, h4 {
+    color: #34495e; /* Adjusted heading color for consistency */
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1100px; /* Slightly reduced width for better focus */
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff; /* Added background for better contrast */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header and Footer */
+[data-include] {
+    background-color: orange; /* Updated to orange for header/footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0; /* Increased padding for a larger footer */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold; /* Added bold text for emphasis */
+}
+
+footer[data-include] {
+    padding: 30px 0; /* Larger padding for footer */
+    font-size: 1rem; /* Adjusted font size for footer text */
+    line-height: 1.5; /* Improved readability for footer text */
+}
+
+/* Example footer text styling */
+footer[data-include] p {
+    margin: 5px 0;
+    color: #fdfdfd; /* Slightly lighter white for footer text */
+}
+
+/* Hero Section */
+.status-hero {
+    background-color: orange;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Rounded corners for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-hero h1 {
+    font-size: 2.8rem; /* Slightly larger for emphasis */
+    margin: 0;
+    font-weight: bold;
+}
+
+.status-hero p {
+    font-size: 1.3rem;
+    margin: 15px 0 0;
+}
+
+/* Dashboard Section */
+.status-dashboard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    margin-bottom: 35px;
+}
+
+.region-status h2 {
+    font-size: 2rem; /* Larger font for section headings */
+    color: #34495e;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3498db; /* Updated border color */
+    padding-bottom: 12px;
+}
+
+/* Cards */
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for better spacing */
+    gap: 25px;
+}
+
+.region-card {
+    background-color: #ecf0f1; /* Softer card background */
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.region-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.region-card h4 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.region-card p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Softer text color for descriptions */
+    margin-bottom: 12px;
+}
+
+button.cta {
+    background-color: #3498db; /* Updated to match the theme */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.cta:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+    transform: translateY(-3px);
+}
+
+button.cta-primary {
+    background-color: #2ecc71; /* Green for primary actions */
+    color: #ffffff;
+}
+
+button.cta-primary:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .status-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .status-hero p {
+        font-size: 1.1rem;
+    }
+
+    .status-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .region-card {
+        padding: 20px;
+    }
+
+    .region-card h4 {
+        font-size: 1.4rem;
+    }
+
+    .region-card p {
+        font-size: 1rem;
+    }
+}

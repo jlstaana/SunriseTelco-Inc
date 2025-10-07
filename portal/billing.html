@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing & Payments - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/portal.css">
+    <link rel="stylesheet" href="../styles/billing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="portal-hero">
+        <h1>Billing & Payments</h1>
+        <p>Manage your bills and payment methods</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="portal-grid">
+            <div class="portal-card current-bill">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <h3>Current Bill</h3>
+                <div class="bill-content">
+                    <h2>$79.99</h2>
+                    <p class="due-date">Due Date: March 15, 2024</p>
+                    <button class="cta cta-primary">Pay Now</button>
+                </div>
+            </div>
+
+            <div class="portal-card payment-history">
+                <i class="fas fa-history"></i>
+                <h3>Payment History</h3>
+                <div class="history-list">
+                    <div class="history-item">
+                        <div class="history-details">
+                            <h4>February 2024</h4>
+                            <p>$79.99 - Paid on Feb 15</p>
+                        </div>
+                        <button class="cta cta-secondary">View Bill</button>
+                    </div>
+                    <div class="history-item">
+                        <div class="history-details">
+                            <h4>January 2024</h4>
+                            <p>$79.99 - Paid on Jan 15</p>
+                        </div>
+                        <button class="cta cta-secondary">View Bill</button>
+                    </div>
+                </div>
+                <button class="cta">View All History</button>
+            </div>
+
+            <div class="portal-card payment-methods">
+                <i class="fas fa-credit-card"></i>
+                <h3>Payment Methods</h3>
+                <div class="payment-list">
+                    <div class="payment-method default">
+                        <i class="fab fa-cc-visa"></i>
+                        <div class="card-info">
+                            <h4>Visa ending in 4242</h4>
+                            <p>Expires 12/25</p>
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <div class="card-info">
+                            <h4>Mastercard ending in 8888</h4>
+                            <p>Expires 08/24</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="cta">Add Payment Method</button>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test - Sunrise Telecom</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/speed-test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .progress-ring {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <div class="speed-test-section">
+        <div class="container">
+            <h1>Internet Speed Test</h1>
+            <p>Test your current internet connection speed</p>
+            
+            <div class="speed-test-container">
+                <div class="speed-indicators">
+                    <div class="indicator">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ddd" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-progress" stroke="#ff6600" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                        </svg>
+                        <div class="speed-display">
+                            <span class="speed-value" id="download-speed">0</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <span class="speed-label">Download</span>
+                    </div>
+                    <div class="indicator">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#ddd" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-progress" stroke="#ff6600" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                        </svg>
+                        <div class="speed-display">
+                            <span class="speed-value" id="upload-speed">0</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <span class="speed-label">Upload</span>
+                    </div>
+                    <div class="indicator">
+                        <span class="speed-value" id="ping">0</span>
+                        <span class="speed-label">ms Ping</span>
+                    </div>
+                </div>
+                <button id="start-test" class="cta cta-primary">Start Speed Test</button>
+                <p class="test-status" id="test-status">Click Start Speed Test to begin</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-include="../components/footer.html"></div>
+    <script src="../script/include.js"></script>
+    <script src="../script/speed-test.js"></script>
+</body>
+</html>
